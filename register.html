@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Enterprise resource planning | Project Management Tool" />
+  <meta name="description" content="Enterprise resource planning" />
+  <meta name="keywords" content="Enterprise resource planning" />
+  <meta name="robots" content="index" />
+  <meta name="language" content="English" />
+  <title>ERP| Management Tool</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/template.css" rel="stylesheet" />
+  <!-- Custom styles for this template-->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="registration-page">
+  <section class="h-100">
+    <div class="container h-100">
+      <div class="row justify-content-md-center h-100">
+        <div class="card-wrapper">
+          <div class="brand shadow">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+          <div class="card shadow">
+            <div class="card-body">
+              <h4 class="card-title">Registration</h4>
+              <form method="POST" class="registration-validation" novalidate>
+                <div class="form-group">
+                  <label for="fullname" class="mb-2">Name</label>
+                  <input id="fullname" type="text" class="form-control" name="fullname" value="" required autofocus />
+                  <div class="invalid-feedback">Name is required</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="mb-2">Email Address</label>
+                  <input id="email" type="email" class="form-control" name="email" value="" required autofocus />
+                  <div class="invalid-feedback">Email is invalid</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="password" class="mb-2">Password </label>
+                  <input id="password" type="password" class="form-control" name="password" required data-eye />
+                  <div class="invalid-feedback">Password is required</div>
+                </div>
+
+                <div class="form-group d-flex justify-content-sm-between align-items-center">
+                  <div class="custom-checkbox custom-control">
+                    <input type="checkbox" name="remember" id="remember" class="custom-control-input" />
+                    <label for="remember" class="custom-control-label pt-1">I agree to the
+                      <a href="forgot.html" class="float-right">
+                        Terms and Conditions
+                      </a></label>
+                  </div>
+                </div>
+
+                <div class="form-group m-0">
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Login
+                  </button>
+                </div>
+                <div class="mt-4 text-center">
+                  Have an account?
+                  <a href="./login.html">Login</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/main.js"></script>
+  <!-- <script>
+    (function () {
+      "use strict";
+      window.addEventListener(
+        "load",
+        function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName(
+            "registration-validation"
+          );
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(
+            forms,
+            function (form) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            }
+          );
+        },
+        false
+      );
+    })();
+  </script> -->
+</body>
+
+</html>

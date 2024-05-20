@@ -1,0 +1,243 @@
+/* login */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* common */
+.mandatory-icon {
+  color: #ff1717;
+}
+
+.error {
+  color: red;
+}
+
+.login-page,
+.registration-page,
+.forgot-page,
+.reset-page {
+  background-color: #f7f9fb;
+  font-size: 14px;
+}
+
+.login-page .form-control,
+.registration-page .form-control,
+.forgot-page .form-control,
+.reset-page .form-control {
+  height: 50px;
+  border-radius: 0;
+  border-left: 5px solid #5c5c5e;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.login-page::-webkit-scrollbar,
+.registration-page::-webkit-scrollbar,
+.forgot-page::-webkit-scrollbar,
+.reset-page::-webkit-scrollbar {
+  width: 0px;
+}
+
+.login-page .brand,
+.registration-page .brand,
+.forgot-page .brand,
+.reset-page .brand {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.login-page .brand img,
+.registration-page .brand img,
+.forgot-page .brand img,
+.reset-page .brand img {
+  width: 100%;
+}
+
+.login-page .card-wrapper,
+.registration-page .card-wrapper,
+.forgot-page .card-wrapper,
+.reset-page .card-wrapper {
+  width: 400px;
+}
+
+.login-page .card,
+.registration-page .card,
+.forgot-page .card,
+.reset-page .card {
+  border-color: transparent;
+  padding: 10px;
+}
+
+.alert-danger-border,
+.alert-danger-border,
+.alert-danger-border,
+.alert-danger-border {
+  border-left: 5px solid #ff1717;
+}
+
+.alert-success-border,
+.alert-success-border,
+.alert-success-border,
+.alert-success-border {
+  border-left: 5px solid green;
+}
+
+.login-page .card .card-title,
+.registration-page .card .card-title,
+.forgot-page .card .card-title,
+.reset-page .card .card-title {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #5c5c5e;
+}
+
+.login-page .card .btn-block,
+.registration-page .card .btn-block,
+.forgot-page .card .btn-block,
+.reset-page .card .btn-block {
+  height: 50px;
+}
+
+.registration-page .card-wrapper {
+  margin-bottom: 3rem;
+}
+
+#dataTables tbody tr td {
+  min-height: 35px;
+  padding: 8px;
+}
+
+/* region */
+
+/* employee profile */
+
+
+#employee-profile [class^='select2'] {
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+}
+
+
+#employee-profile .form-control {
+  height: calc(1.5em + 0.75rem + 2px) !important;
+}
+
+#employee-profile .select2-container .select2-selection--single {
+  height: calc(1.5em + 0.75rem + 2px) !important;
+}
+
+.user-profile-box {
+  margin-bottom: 40px;
+}
+
+.user-profile-box img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.user-profile-item {
+  border-radius: 50% !important;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  border: 5px solid rgba(201, 201, 201, 0.7);
+  position: relative;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+}
+
+.profile-upload {
+  position: absolute;
+  bottom: 0px;
+  right: 75px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.profile-upload:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+
+.file-upload {
+  display: none;
+}
+
+/* signature upload */
+.signature-file {
+  visibility: hidden;
+  position: absolute;
+}
+
+.signature-box {
+  overflow: hidden;
+  width: 100%;
+  height: 68px;
+
+}
+
+img.signature-preview {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.apply-leave-btn {
+  margin-top: 26px;
+}
+.leaveApplyFormAdd .form-control{
+  border-radius: 5px !important;
+}
+.leaveApplyFormAdd  label {
+  display: inline-block;
+  margin-bottom: 0rem;
+  font-size: 12px;
+}
+
+.suggestion-table {
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
